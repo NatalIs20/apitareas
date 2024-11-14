@@ -6,7 +6,7 @@ from flask_cors import CORS  # Para habilitar CORS si es necesario
 app = Flask(__name__)
 
 # Configuración de la conexión con MongoDB
-app.config["MONGO_URI"] = "mongodb+srv://Natali:NCA8711N.@natali.1sjupkd.mongodb.net/tareas_db"  # Cambia esto si tienes otra URI
+app.config["MONGO_URI"] = "mongodb+srv://Natali:NCA8711N.@natali.1sjupkd.mongodb.net/tareas_db"  
 mongo = PyMongo(app)
 CORS(app)  # Habilitar CORS para permitir peticiones desde diferentes orígenes
 
